@@ -1,54 +1,84 @@
-body {
-    font-family:"Edu SA Hand", cursive;
-    margin: 0;
-    background-color: #8e7dbe;
-    font-size: large;
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Edu SA Hand", cursive;
+  background-color: #8e7dbe;
+  font-size: large;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-    width: 100%;
-    height: 80px;
-    background-color: #f7cfd8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: #f7cfd8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header img {
-    width: 40px;
-    height: 40px;
-    background-color: transparent;
-    border: none;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
 }
 
 #header-detail {
-    width: 100%;
-    height: 4px;
-    background-color: #c95792;
+  width: 100%;
+  height: 4px;
+  background-color: #c95792;
 }
 
 #welcome {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: calc(100vh - 80px - 4px - 150px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
 }
 
 #welcome div {
-    width: 50%;
-    height: 200px;
-    background-color: #f4f8d3;
-    border-radius: 20pt;
-    border: 4px solid #f7cfd8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 90%;
+  height: 200px;
+  background-color: #f4f8d3;
+  border-radius: 20px;
+  border: 4px solid #f7cfd8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#add-mood {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+#add-mood div {
+  width: 90%;
+  height: 500px;
+  background-color: #f7cfd8;
+  border-radius: 20px;
+  border: 4px solid #f4f8d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
-    width: 100%;
-    height: 150px;
-    position: fixed;
-    bottom: 0px;
-    background-color: #c95792;
+  width: 100%;
+  height: 150px;
+  background-color: #c95792;
 }
