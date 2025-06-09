@@ -59,26 +59,164 @@ header img {
   align-items: center;
   text-align: center;
 }
-
-#add-mood {
-  display: flex;
-  justify-content: center;
-  padding: 20px 0;
-}
-
-#add-mood div {
-  width: 90%;
-  height: 500px;
+.mood-form {
   background-color: #f7cfd8;
-  border-radius: 20px;
   border: 4px solid #f4f8d3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border-radius: 16px;
+  padding: 20px;
+  width: 90%;
+  margin: 30px auto;
+  text-align: center;
+  font-family: "Edu SA Hand", cursive;
+  color: #2d2d2d;
 }
 
-footer {
-  width: 100%;
-  height: 150px;
+.mood-form h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.mood-options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.mood-options input[type="radio"] {
+  display: none;
+}
+
+.mood-options label {
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.mood-options input[type="radio"]:checked + .emoji {
+  transform: scale(1.2);
+  border: 3px solid #c95792;
+  border-radius: 10px;
+  background-color: #fbe7ef;
+}
+
+textarea {
+  width: 90%;
+  border-radius: 8px;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 1rem;
+  margin-top: 8px;
+  border: 3px solid #8e7dbe;
+  background-color: #f4f8d3;
+  resize: none;
+}
+
+button {
+  margin-top: 15px;
   background-color: #c95792;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #a84072;
+}
+
+#mood-history {
+  background-color: #f4f8d3; 
+  border: 4px solid #f7cfd8; 
+  border-radius: 16px;
+  padding: 20px;
+  margin: 30px auto;
+  width: 90%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Edu SA Hand", cursive;
+  color: #333;
+}
+
+#mood-history h3 {
+  color: #8e7dbe; /* roxo pastel */
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#mood-history ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+#mood-history ul li {
+  background-color: #fff;
+  border-left: 6px solid #c95792; /* rosa mais escuro */
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+#resumo-humores {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1rem;
+  color: #c95792;
+}
+
+#limpar-historico {
+  background-color: transparent;
+  border: 2px solid #c95792;
+  color: #c95792;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: "Edu SA Hand", cursive;
+  display: block;
+  margin: 10px auto 0 auto;
+}
+
+#limpar-historico:hover {
+  background-color: #f7cfd8;
+  color: #8e7dbe;
+  transform: scale(1.05);
+}
+
+#footer {
+  background-color: #C95792;
+  padding: 20px 0;
+  text-align: center;
+  color: #f4f8d3;
+  font-family: "Edu SA Hand", cursive;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.footer-icons a {
+  color: #f4f8d3;
+  transition: transform 0.2s;
+}
+
+.footer-icons a:hover {
+  transform: scale(1.2);
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  color: #f4f8d3;
 }

@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css"/>
-    <link rel="icon" href="./img/feliz.png"/>
-    <title>Mood Daily - Registro de humor</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="icon" href="./img/feliz.png" />
+  <title>Mood Daily - Registro de humor</title>
 </head>
+
 <body>
   <div class="page-wrapper">
     <header>
@@ -24,16 +27,89 @@
           <p id="mensagem-boas-vindas"></p>
         </div>
       </section>
-      <section id="add-mood">
-        <div></div>
+
+      <section class="mood-form">
+        <h2>Registre seu humor de hoje!</h2>
+
+        <form id="mood-form">
+          <p>Como você está?</p>
+
+          <div class="mood-options">
+            <label>
+              <input type="checkbox" name="humor" value="alegria" />
+              <span class="emoji" title="Alegria">😄</span>
+            </label>
+
+            <label>
+              <input type="checkbox" name="humor" value="tristeza" />
+              <span class="emoji" title="Tristeza">😢</span>
+            </label>
+
+            <label>
+              <input type="checkbox" name="humor" value="medo" />
+              <span class="emoji" title="Medo">😨</span>
+            </label>
+
+            <label>
+              <input type="checkbox" name="humor" value="raiva" />
+              <span class="emoji" title="Raiva">😠</span>
+            </label>
+
+            <label>
+              <input type="checkbox" name="humor" value="nojo" />
+              <span class="emoji" title="Nojo">🤢</span>
+            </label>
+
+            <label>
+              <input type="checkbox" name="humor" value="surpresa" />
+              <span class="emoji" title="Surpresa">😲</span>
+            </label>
+
+            <label>
+              <input type="checkbox" name="humor" value="neutro" />
+              <span class="emoji" title="Neutro">😐</span>
+            </label>
+          </div>
+
+          <label for="descricao">Qual o motivo de seu emoji? Descreva aqui:</label>
+          <textarea id="descricao" rows="5"></textarea>
+
+          <button type="submit">Salvar</button>
+        </form>
       </section>
-      <section id="mood-history"></section>
+
+
+      <section id="mood-history">
+        <h3>Histórico semanal</h3>
+        <ul id="historico-lista"></ul>
+
+        <h3>Resumo</h3>
+        <p id="resumo-humores"></p>
+        <button id="limpar-historico" title="Limpar histórico">
+          🗑️ Limpar
+        </button>
+      </section>
     </main>
 
-    <footer>
-      <div id="network"></div>
+    <footer id="footer">
+      <div class="footer-icons">
+        <a href="https://instagram.com/isislavor" target="_blank" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://linkedin.com/in/isislavor" target="_blank" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/isislavor" target="_blank" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+      <b>
+        <p class="footer-text">INL DEV</p>
+      </b>
     </footer>
+
   </div>
-<script src="./js/script.js"></script>
+  <script src="./js/script.js"></script>
 </body>
+
 </html>
