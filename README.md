@@ -20,7 +20,7 @@ O MoodDaily é um diário de humor simples, fofo e interativo feito com HTML, CS
 
 ## 🚀 Acesse o projeto
 
-👉 [Clique aqui para ver no GitHub Pages](https://isislavor.github.io/mood-daily/)
+👉 [Clique aqui para ver no GitHub Pages](https://isislavor.github.io/registrodehumor/)
 
 Feito com carinho para a prática de JavaScript 💖.
 
