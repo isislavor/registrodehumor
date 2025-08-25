@@ -24,5 +24,8 @@ O MoodDaily é um diário de humor simples, fofo e interativo feito com HTML, CS
 
 Feito com carinho para a prática de JavaScript 💖.
 
+<img width="1360" height="693" alt="image" src="https://github.com/user-attachments/assets/ad1f1bb8-aa12-4552-8225-665bd47982f6" />
+
+
 Design e desenvolvimento por **Isis** ✨💖💻
 
